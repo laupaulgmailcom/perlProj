@@ -1,0 +1,42 @@
+
+#tabAppointment {
+  margin: 1em 0;
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+  color: #024457;
+  border-radius: 10px;
+  border: 1px solid #167F92;
+}
+#tabAppointment tr {
+  border: 1px solid #D9E4E6;
+}
+#tabAppointment tr:nth-child(odd) {
+  background-color: #EAF3F3;
+}
+#tabAppointment th {
+  display: table-cell;
+  border: 1px solid #FFF;
+  background-color: #167F92;
+  color: #FFF;
+  padding: 0.5em;
+}
+
+body {
+  padding: 0 2em;
+  font-family: Arial, sans-serif;
+  color: #024457;
+  background: #f2f2f2;
+}
+
+#errorMsg {
+  font-family: Verdana;
+  font-weight: normal;
+  color: red;
+  margin: 10px;
+}
+
+#errorMsg p {
+    padding: 0px;
+    margin: 0px;
+}

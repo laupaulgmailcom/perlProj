@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+         <meta charset="utf-8">
+        <title>Online Appointment Management System</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="css/jquery.timepicker.css">
+        <link rel="stylesheet" href="css/site.css">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/jquery.timepicker.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+<body>
+
+<div id="errorMsg"></div>
+
+<button type="button" id="btnNew" style="display:block">NEW</button>
+
+<div id="newForm" style="display:none">
+        <input type="button" id="btnAdd" value="ADD">
+        <button type="button" id="btnCancelNew">CANCEL</button>
+        <p>DATE <input type="text" id="datepicker" name="appDate" maxlength="10"></p>
+        <p>TIME <input type="text" id="timepicker" name="appTime" maxlength="8"></p>
+        <p>DESC <input type="text" id="appDesc" name="appDesc" maxlength="100"></p>
+</div>
+
+<p>
+<input type="text" id="searchBox"><button type="button" id="btnSearch">SEARCH</button>
+<table id="tabAppointment">
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+</p>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $(function () {
+        init();
+    });
+</script>
